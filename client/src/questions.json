@@ -1,0 +1,81 @@
+[
+    {"id":1,
+    "question":"Which best describes you?",
+    "A": "Strong Willed",
+    "B": "Focused",
+    "C":"Dynamic",
+    "D":"Free-Spirited"
+    },
+    {
+        "id":2,
+        "question":"Which is the most important to you?",
+        "A":"Honor",
+        "B":"Stability",
+        "C":"Knowledge",
+        "D":"Freedom"
+    },
+    {
+        "id":3,
+        "question":"Which sounds like the most enjoyable part of nature?",
+        "A":"A Hot Summer Afternoon",
+        "B":"Crunchy Leaves in Fall",
+        "C":"A Rainy Day",
+        "D":"An Ocean Breeze"
+    },
+    {
+        "id":4,
+        "question":"Pick an Animal!",
+        "A":"Turtleduck",
+        "B":"Fire Furret",
+        "C":"Koalaotter",
+        "D":"Winged Lemur"
+    },
+    {
+        "id":5,
+        "question":"How to you handle Stress",
+        "A":"Let my emotions get the better of me.",
+        "B":"Stand strong and proud through anything.",
+        "C":"Change my approach to find a solution.",
+        "D":"Don't worry things always work out."
+    },
+    {
+        "id":6,
+        "question":"Which nonbender do you like the most?",
+        "A":"Mai",
+        "B":"Suki",
+        "C":"Sokka",
+        "D":"Tai Lee"
+    },
+    {
+        "id":7,
+        "question":"How would you respond to being betrayed?",
+        "A":"Eye for an eye, I want my revenge.",
+        "B":"If I can get them back I will but I can roll with it.",
+        "C":"I would lose all trust in that person.",
+        "D":"I may be furious but I would show mercy."
+    },
+    {
+        "id":8,
+        "question":"If you where garunteed one of these which would you pick?",
+        "A":"Status",
+        "B":"Strength",
+        "C":"Love",
+        "D":"Pleasure"
+    },
+    {
+        "id":9,
+        "question":"Do you see things through till the end?",
+        "A":"Always",
+        "B":"If it stays worth while",
+        "C":"I'll consider other options as I go",
+        "D":"I'll try my best"
+    },
+    {
+        "id":10,
+        "question":"Which element would you want to bend?",
+        "A":"Fire",
+        "B":"Earth",
+        "C":"Water",
+        "D":"Air"
+    }
+]
