@@ -67,7 +67,7 @@ const displayCurrent=()=>{
 
     return (
         <Row>
-            <Col sm={4} className="text-center">
+            <Col sm={8} className="text-center">
                 <h3 className="question">{props.question}</h3>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>

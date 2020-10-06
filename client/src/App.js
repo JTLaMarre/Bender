@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import questions from './questions.json';
 import Question from './components/question';
-import AirContextProvider from './contexts/air'
-import FireContextProvider from './contexts/fire'
-import EarthContextProvider from './contexts/earth'
-import WaterContextProvider from './contexts/water'
+import AirContextProvider from './contexts/air';
+import FireContextProvider from './contexts/fire';
+import EarthContextProvider from './contexts/earth';
+import WaterContextProvider from './contexts/water';
+import Result from './components/result';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         )
       })}
     </div>
+    <Result/>
     </Container>
     </WaterContextProvider>
     </EarthContextProvider>
