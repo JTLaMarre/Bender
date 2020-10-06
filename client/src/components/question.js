@@ -3,8 +3,18 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import {airContext} from '../contexts/air'
+import {fireContext} from '../contexts/fire'
+import {waterContext} from '../contexts/water'
+import {earthContext} from '../contexts/earth'
 
 const Question = (props) => {
+
+const {air , setAir}=useContext(airContext)
+const {fire , setFire}=useContext(fireContext)
+const {water , setWater}=useContext(waterContext)
+const {earth , setEarth}=useContext(earthContext)
+
     return (
         <Row>
             <Col sm={4} className="text-center">
