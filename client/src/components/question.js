@@ -7,32 +7,32 @@ import Button from 'react-bootstrap/Button';
 const Question = (props) => {
     return (
         <Row>
-            <Col sm={4}>
-                <h3>{props.question}</h3>
+            <Col sm={4} className="text-center">
+                <h3 className="question">{props.question}</h3>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
-                        <Button variant="outline-secondary">A</Button>
+                        <Button variant="danger">A</Button>
                     </InputGroup.Prepend>
                     <InputGroup.Text>{props.A}</InputGroup.Text>
                    
                 </InputGroup>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
-                        <Button variant="outline-secondary">B</Button>
+                        <Button variant="danger">B</Button>
                     </InputGroup.Prepend>
                     <InputGroup.Text>{props.B}</InputGroup.Text>
                     
                 </InputGroup>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
-                        <Button variant="outline-secondary">C</Button>
+                        <Button variant="danger">C</Button>
                     </InputGroup.Prepend>
                     <InputGroup.Text>{props.C}</InputGroup.Text>
                    
                 </InputGroup>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
-                        <Button variant="outline-secondary">D</Button>
+                        <Button variant="danger">D</Button>
                         <InputGroup.Text>{props.D}</InputGroup.Text>
                     </InputGroup.Prepend>
                     
