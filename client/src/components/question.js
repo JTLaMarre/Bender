@@ -19,8 +19,7 @@ const[answered , setAnswered]=useState(false)
 const handleA =()=>{
     if(answered===false){
         setFire(fire + 1)
-       displayCurrent()
-       setAnswered(true)
+              setAnswered(true)
     }
     else{
         alert('question already answered')
@@ -29,7 +28,7 @@ const handleA =()=>{
 const handleB =()=>{
     if(answered===false){
         setEarth(earth + 1)
-       displayCurrent()
+       
        setAnswered(true)
     }
     else{
@@ -39,7 +38,7 @@ const handleB =()=>{
 const handleC =()=>{
     if(answered===false){
         setWater(water + 1)
-       displayCurrent()
+      
        setAnswered(true)
     }
     else{
@@ -49,24 +48,17 @@ const handleC =()=>{
 const handleD =()=>{
     if(answered===false){
         setAir(air + 1)
-       displayCurrent()
+       
        setAnswered(true)
     }
     else{
         alert('question already answered')
     }
 }
-const displayCurrent=()=>{
-    console.log(
-    `
-    fire:${fire}
-    earth:${earth}
-    water:${water}
-    air:${air}`)
-}
+
 
     return (
-        <Row>
+        <Row className="justify-content-center">
             <Col sm={8} className="text-center">
                 <h3 className="question">{props.question}</h3>
                 <InputGroup className="mb-3">

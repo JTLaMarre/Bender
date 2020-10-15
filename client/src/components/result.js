@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext,useState} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -13,20 +13,54 @@ const Result = ()=>{
     const {fire}=useContext(fireContext);
     const {water}=useContext(waterContext);
     const {earth}=useContext(earthContext);
+    
+    const [resNum ,setResNum]=useState(0)
+
+
+
+    const highest =(arr,arr2)=>{
+        let num = 0;
+        let res ='none';
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]>num){
+                num = arr[i]
+                res=arr2[i]
+                
+            }
+        }
+        alert(`you are a ${res} bender`)
+        
+       
+    }
+
+   
+    
 
     const handleClick=()=>{
+
+       highest([fire,earth,air,water],['fire','earth','air','water'])
+
+
+
         console.log(`
         fire:${fire}
         earth:${earth}
         water:${water}
         air"${air}`)
+
+
+       
+     
     }
+
+    
+    
 
 
     return(
-        <Row>
-            <Col>
-                <Button className="success" onClick={handleClick}>Results!</Button>
+        <Row className="justify-content-center">
+            <Col className="justify-content-center">
+                <Button className="btn-info btn-lg" id="results" onClick={handleClick}>Results!</Button>
             </Col>
         </Row>
     )

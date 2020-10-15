@@ -10,6 +10,7 @@ import FireContextProvider from './contexts/fire';
 import EarthContextProvider from './contexts/earth';
 import WaterContextProvider from './contexts/water';
 import Result from './components/result';
+import Row from 'react-bootstrap/Row';
 
 function App() {
   return (
@@ -18,15 +19,18 @@ function App() {
     <EarthContextProvider>
     <WaterContextProvider>
     <Container>
-
     <div className="App">
+    <Row className="justify-content-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Avatar_The_Last_Airbender_logo.svg/338px-Avatar_The_Last_Airbender_logo.svg.png" alt="Avatar logo sourced from wikipedia page"/>
+    </Row>
+    <hr/>
       {questions.map((question)=>{
         return(
-          <Question key={question.id} question={question.question} A={question.A} B={question.B} C={question.C} D={question.C} />
+          <Question key={question.id} question={question.question} A={question.A} B={question.B} C={question.C} D={question.D} />
         )
       })}
-    </div>
     <Result/>
+    </div>
     </Container>
     </WaterContextProvider>
     </EarthContextProvider>
