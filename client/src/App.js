@@ -10,6 +10,7 @@ import FireContextProvider from './contexts/fire';
 import EarthContextProvider from './contexts/earth';
 import WaterContextProvider from './contexts/water';
 import Result from './components/result';
+import Retake from './components/retake'
 import Row from 'react-bootstrap/Row';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         )
       })}
     <Result/>
+    <Retake/>
     </div>
     </Container>
     </WaterContextProvider>
